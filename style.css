@@ -1,16 +1,30 @@
 .background {
-    background-image: url(photos/diver-in-ocean.jpg);
+    background-image: url(photos/jake-blucker-tMzCrBkM99Y-unsplash.jpg);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    width: 50vw;
-    height: 70vw;
+    width: min(500px, 51vw);
+    height: 100vh;
     position: relative;
+    z-index: 1;
 }
 
 .credit {
     color: white;
     position: fixed;
-    bottom: 12px;
-    background-color: rgba(28, 14, 22, .8);
+    bottom: 5px;
+    left: 10px;
+}
+
+.logo {
+    position: fixed;
+    background-color: rgba(28, 14, 22, .5);
+    background-image: url(photos/flora_cat_logo.png);
+    background-position: center center;
+    z-index: 2;
+    width: min(500px, 51vw);
+    height: min(200px, 20vh);
+    background-size: 110% auto;
+    background-repeat: no-repeat;
+    top: 7vw;
 }
