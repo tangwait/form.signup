@@ -1,0 +1,16 @@
+.background {
+    background-image: url(photos/diver-in-ocean.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 50vw;
+    height: 70vw;
+    position: relative;
+}
+
+.credit {
+    color: white;
+    position: fixed;
+    bottom: 12px;
+    background-color: rgba(28, 14, 22, .8);
+}
