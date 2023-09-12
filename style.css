@@ -1,3 +1,8 @@
+body {
+    display: flex;
+    flex-direction: row;
+}
+
 .background {
     background-image: url(photos/jake-blucker-tMzCrBkM99Y-unsplash.jpg);
     background-size: cover;
@@ -7,6 +12,7 @@
     height: 100vh;
     position: relative;
     z-index: 1;
+    flex: 1;
 }
 
 .credit {
@@ -17,14 +23,20 @@
 }
 
 .logo {
-    position: fixed;
+    position: relative;
     background-color: rgba(28, 14, 22, .5);
     background-image: url(photos/flora_cat_logo.png);
     background-position: center center;
     z-index: 2;
-    width: min(500px, 51vw);
+    width: 100%;
     height: min(200px, 20vh);
     background-size: 110% auto;
     background-repeat: no-repeat;
-    top: 7vw;
+    top: 30px;
+}
+
+.description {
+    flex: 1;
+    padding: 20px;
+    background-color: #ffffff8a;
 }
