@@ -1,6 +1,7 @@
 body {
     display: flex;
     flex-direction: row;
+    background-color: black;
 }
 
 .background {
@@ -13,13 +14,14 @@ body {
     position: relative;
     z-index: 1;
     flex: 1;
+    border-radius: 15px;
 }
 
 .credit {
     color: white;
-    position: fixed;
+    position: absolute;
     bottom: 5px;
-    left: 10px;
+    left: 15px;
 }
 
 .logo {
@@ -38,5 +40,39 @@ body {
 .description {
     flex: 1;
     padding: 20px;
-    background-color: #ffffff8a;
+    background-color: rgba(179, 166, 166, 0.7);
+    border-radius: 15px;
+}
+
+.description h1 {
+    padding: 10px;
+    top: min(200px, 10vh);
+}
+
+.form {
+    background-color: rgb(250, 235, 215);
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.form .line1,
+.form .line2,
+.form .line3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form input {
+    width: min(100px, 10vw);
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    flex: 1;
+}
+
+.form label {
+    padding: 5px;
 }
