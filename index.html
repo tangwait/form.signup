@@ -8,14 +8,14 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
     <div class="background">
         <p class="credit">Photo by Jake Blucker at unsplash.com</p>
         <p class="logo"></p>
     </div>
     <div class="description">
         <h1>We can go on a journey together. Sign up now to explore new frontiers!</h1>
-        <div class="form">
+        <form id="myForm">
             <h2>From road trips to cruises and flights, we will keep you up to date at Flora.</h2>
             <div class="line1">
                 <label for="firstname">First Name</label>
@@ -27,7 +27,7 @@
                 <label for="email">Email</label>
                 <input type="email" id="email" placeholder="johndoe@gmail.com" required>
                 <label for="phone">Phone Number</label>
-                <input type="tel" id="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="1234567890">
+                <input type="tel" id="phone" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" placeholder="1234567890" maxlength="10">
             </div>
             <div class="line3">
             <label for="newPassword">New Password</label>
@@ -35,9 +35,9 @@
             <label for="confirmPass">Confirm Password</label>
             <input type="password" id="confirmPass" placeholder="password" required>
             </div>
-        </div>
+        </form>
         <div class="descriptionBottom">
-            <button class="account">Create Account</button>
+            <button type="submit">Create Account</button>
             <p>Already have an account? Click here</p>
         </div>
     </div>

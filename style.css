@@ -50,21 +50,21 @@ body {
     top: min(200px, 10vh);
 }
 
-.form {
+#myForm {
     background-color: rgb(250, 235, 215);
     padding: 20px;
     border-radius: 15px;
 }
 
-.form .line1,
-.form .line2,
-.form .line3 {
+#myForm .line1,
+#myForm .line2,
+#myForm .line3 {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.form input {
+#myForm input {
     width: min(100px, 10vw);
     padding: 8px;
     margin-bottom: 10px;
@@ -75,7 +75,7 @@ body {
     transition: border-color 0.3s;
 }
 
-.form label {
+#myForm label {
     padding: 5px;
 }
 
@@ -90,11 +90,11 @@ button {
     border-radius: 5px;
 }
 
-input:not(:focus):not(:placeholder-shown):invalid {
+#myForm input:not(:focus):not(:placeholder-shown):invalid {
     border-color: red;
 }
 
-input:not(:focus):not(:placeholder-shown):valid {
+#myForm input:not(:focus):not(:placeholder-shown):valid {
     border-color: green;
 }
 
