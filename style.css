@@ -68,10 +68,11 @@ body {
     width: min(100px, 10vw);
     padding: 8px;
     margin-bottom: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid black;
     border-radius: 5px;
     font-size: 14px;
     flex: 1;
+    transition: border-color 0.3s;
 }
 
 .form label {
@@ -87,4 +88,16 @@ button {
     background-color: #962902;
     color: white;
     border-radius: 5px;
+}
+
+input:not(:focus):not(:placeholder-shown):invalid {
+    border-color: red;
+}
+
+input:not(:focus):not(:placeholder-shown):valid {
+    border-color: green;
+}
+
+input:not(:focus) {
+    border-color: black;
 }
